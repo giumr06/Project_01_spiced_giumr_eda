@@ -1,56 +1,13 @@
-# ds-project-template
+# The project structure: 
 
-Template for creating ds simple projects
+This folder contains two notebooks with project task given in the [assignment](assignment.md).
 
-## Requirements
+- First notebook contains the [Task 01](project_task_01_giumr.ipynb) where 3 insights about the chosen data set. Providing a more descriptive analysis of the processes involved in the exercise. Using the explations provide in the ["Fetching the data"](Fetching_the_data_ead.ipynb)
 
-- pyenv
-- python==3.11.3
+- Second notebook contains the [Customer service analysis](project_client_giumr.ipynb). It's main part of the project where we have to select and analyze the right part of the given data set in order to provide 3 good recommendations for a client of our choice,according with the list . For this project the chosen customer  was Nicole Johnson.
 
-## Setup
+- You can find everything that was used to create the virtual environment for this project in the [requirements](requirements.txt). 
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+- The based data set can be found in the folder data that is included already in the repository for this project.
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
-
-### Environment
-
-This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
-
-```bash
-brew update
-brew install postgresql
-```
-
-In order to install the environment you can use the following commands:
-
-```
-pyenv local 3.11.3
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
+- The [column descriptions](column_names.md) can also be found in this repository, in case the categories used for creating and analyzing the data are not very clear. You will find there a explanation of the meaning of each category present in the original data sets.
