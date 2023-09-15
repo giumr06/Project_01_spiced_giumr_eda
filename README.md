@@ -6,7 +6,7 @@
 
 - The goal here is to have a superficial analysis of the provided data using Python language.
 
-- Last update: 11.09.2023. No changes in the structure or previous content of the original project. Changes were mostly made to improve the understanding of the notebook itself.
+- Last update: 09.2023. No changes in the structure or previous content of the original project. Changes were mostly made to improve the understanding of the notebook itself.
 
 # The project structure: 
 
